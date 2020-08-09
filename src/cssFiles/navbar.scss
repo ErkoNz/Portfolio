@@ -1,0 +1,119 @@
+.nav-wrapper {
+  background: #f9f9f9;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 4px 4px 10px #adadad5e, -2px -2px 14px #d1d1d156;
+  position: relative;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+
+  nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .myName-as-logo {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .myName-as-logo :nth-child(1) {
+      background: var(--green_v1);
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .myName-as-logo :nth-child(2) {
+      color: black;
+      margin-left: 10px;
+      //   font-size: 17px;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+
+    ul.nav-links {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      //   font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    // ul.nav-links li {
+    //   color: #222;
+    //   padding: 0.5em 1em;
+    //   border: none;
+    //   outline: none;
+    //   position: relative;
+    //   cursor: pointer;
+    //   --accent-color: rgba(0, 128, 0, 0.616);
+    //   //   border: 2px solid red;
+    // }
+
+    ul.nav-links li {
+      //underline animation
+      color: #222;
+      padding: 0.78em 1em;
+      border: none;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      --accent-color: rgba(0, 128, 0, 0.616);
+    }
+
+    ul.nav-links li:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: var(--green_v1);
+      transition: transform 300ms ease-in-out;
+
+      transform: scale(0);
+    }
+
+    ul.nav-links li:hover::before,
+    ul.nav-links li:focus::before {
+      transform: scale(1);
+    }
+
+    .nav-links li:last-child {
+      border: 2px solid var(--green_v1);
+      border-radius: 25px;
+      padding: 0.3em 0.9em;
+      //   transition: 0.2s;
+
+      //   transition-delay: 2s;
+      // align-self: right;
+      // justify-self: ;
+    }
+
+    .square {
+      background: rgba(255, 255, 255, 0.3);
+      background-color: blue;
+      position: absolute;
+      height: 90vh;
+      left: 0;
+      width: 17%;
+      transform: skew(-55deg);
+      margin-left: 1.1%;
+      z-index: 0;
+      top: 0;
+    }
+  }
+}

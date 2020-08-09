@@ -1,0 +1,506 @@
+.myProjects-main {
+  // margin-top: -100vh;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5vh;
+  position: relative;
+  overflow: hidden;
+
+  h3 {
+    margin-top: 1em;
+    font-size: 3rem;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: var(--green_v1);
+    width: 80px;
+    height: 4px;
+  }
+
+  .square2 {
+    background: rgba(98, 98, 98, 0.082);
+    left: -300px;
+    top: -320px;
+    width: 400px;
+    height: 1000px;
+    position: absolute;
+    transform: rotate(47deg);
+  }
+
+  .square3 {
+    background: rgba(98, 98, 98, 0.082);
+    right: -300px;
+    bottom: -420px;
+    width: 400px;
+    height: 1000px;
+    position: absolute;
+    transform: rotate(47deg);
+  }
+
+  .projectsSection {
+    margin-top: 30px;
+    // border: 2px solid black;
+    width: 70%;
+    margin-left: 15%;
+
+    .more-soon {
+      // color: red;
+      font-size: 1.2rem;
+      margin: 50px;
+      letter-spacing: 1.5px;
+
+      span:nth-child(1) {
+        animation: firstdot 4s linear infinite;
+      }
+
+      @keyframes firstdot {
+        0% {
+          opacity: 1;
+        }
+        82% {
+          opacity: 1;
+        }
+        83% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      span:nth-child(2) {
+        animation: seconddot 4s linear infinite;
+      }
+
+      @keyframes seconddot {
+        0% {
+          opacity: 0;
+        }
+        16% {
+          opacity: 0;
+        }
+        16.1% {
+          opacity: 1;
+        }
+        63% {
+          opacity: 1;
+        }
+        64% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      span:nth-child(3) {
+        animation: thirddot 4s linear infinite;
+        @keyframes thirddot {
+          0% {
+            opacity: 0;
+          }
+          33% {
+            opacity: 0;
+          }
+          34% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          51% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .covidProject {
+      // border: 4px solid blue;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 10px;
+
+      div:nth-child(1) {
+        width: 35%;
+        height: 350px;
+        overflow: hidden;
+        background: rgb(71, 71, 71);
+        margin-bottom: 80px;
+        position: relative;
+
+        img:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+          animation: covid 5s linear 2s infinite;
+          position: relative;
+          top: 0px;
+          transition: 0.4s;
+
+          @keyframes covid {
+            0% {
+              top: 0px;
+            }
+            30% {
+              top: -250px;
+            }
+            50% {
+              top: -250px;
+            }
+
+            80% {
+              top: 0px;
+            }
+
+            100% {
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      div:nth-child(2) {
+        width: 40%;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+        text-align: left;
+        padding-left: 35px;
+        letter-spacing: 1px;
+        height: 350px;
+        line-height: 1.2;
+        position: relative;
+        padding-top: 10px;
+        // border: 2px solid green;
+        margin-left: 3%;
+
+        .builtWith {
+          color: rgb(149, 149, 149);
+          font-size: 1rem;
+          // border: 1px solid red;
+          position: relative;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 50%;
+          margin-top: 50px;
+        }
+
+        .date {
+          color: rgb(109, 109, 109);
+          font-size: 0.9rem;
+        }
+
+        .textProject {
+          color: rgb(0, 0, 0);
+          font-size: 1.1rem;
+        }
+
+        .buttonWrapper {
+          margin-left: 0px;
+          margin-top: 40px;
+
+          button {
+            margin-right: 25px;
+            padding: 6px 30px;
+            outline: none;
+            background: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+          button:hover {
+            border-radius: 20px;
+          }
+          button:nth-child(1) {
+            background: var(--green_v1);
+            color: white;
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2) {
+            border: 3px solid var(--green_v1);
+          }
+        }
+      }
+    }
+
+    .hotelProject {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 10px;
+      // border: 2px solid red;
+
+      div:nth-child(2) {
+        // border: 2px solid red;
+        width: 35%;
+        height: 350px;
+        overflow: hidden;
+        background: rgb(71, 71, 71);
+        margin-bottom: 80px;
+        img:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        img {
+          width: 100%;
+          animation: eminent 5s linear 2s infinite;
+          position: relative;
+          top: 0px;
+          transition: 0.4s;
+          animation-delay: 1s;
+
+          @keyframes eminent {
+            0% {
+              top: 0px;
+            }
+            30% {
+              top: -200px;
+            }
+            50% {
+              top: -200px;
+            }
+
+            80% {
+              top: 0px;
+            }
+
+            100% {
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      div:nth-child(1) {
+        width: 40%;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+        text-align: left;
+        padding-left: 35px;
+        letter-spacing: 1px;
+        height: 350px;
+        line-height: 1.2;
+        position: relative;
+        padding-top: 10px;
+        // border: 3px solid blue;
+        margin-right: 5%;
+
+        .builtWith {
+          color: rgb(149, 149, 149);
+          font-size: 1rem;
+          // border: 1px solid red;
+          position: relative;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 50%;
+          margin-top: 50px;
+        }
+
+        .date {
+          color: rgb(109, 109, 109);
+          font-size: 0.9rem;
+        }
+
+        .textProject {
+          color: rgb(0, 0, 0);
+          font-size: 1.1rem;
+        }
+
+        .buttonWrapper {
+          margin-left: 0px;
+          margin-top: 40px;
+
+          button {
+            margin-right: 25px;
+            padding: 6px 30px;
+            outline: none;
+            background: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+          button:hover {
+            border-radius: 20px;
+          }
+          button:nth-child(1) {
+            background: var(--green_v1);
+            color: white;
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2) {
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2):hover {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .content-projects {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   color: red;
+//   height: 75%;
+//   margin-left: 12%;
+
+//   .wrapper_moving_pic {
+//     // border: 2px solid red;
+//     width: 100%;
+//     height: 250px;
+//     overflow: hidden;
+//     background: rgb(71, 71, 71);
+
+//     img.classCovid {
+//       width: 100%;
+//       animation: covid 5s linear 2s infinite;
+//       position: relative;
+//       top: 0px;
+//       transition: 0.4s;
+//     }
+
+//     img.classEminent {
+//       width: 100%;
+//       animation: eminent 6s linear 2s infinite;
+//       position: relative;
+//       animation-delay: 2s;
+//       transition: 0.4s;
+//     }
+
+//     img:hover {
+//       opacity: 0.5;
+//     }
+
+//     @keyframes covid {
+//       0% {
+//         top: 0px;
+//       }
+//       30% {
+//         top: -200px;
+//       }
+//       50% {
+//         top: -200px;
+//       }
+
+//       80% {
+//         top: 0px;
+//       }
+
+//       100% {
+//         top: 0px;
+//       }
+//     }
+
+//     @keyframes eminent {
+//       0% {
+//         top: 0px;
+//       }
+//       30% {
+//         top: -250px;
+//       }
+//       50% {
+//         top: -250px;
+//       }
+
+//       80% {
+//         top: 0px;
+//       }
+
+//       100% {
+//         top: 0px;
+//       }
+//     }
+//   }
+
+//   .card {
+//     width: 350px;
+//     height: 450px;
+//     margin-left: 100px;
+//     letter-spacing: 1px;
+//     // border: 1px solid red;
+//     // border-radius: 5px;
+//     overflow: hidden;
+//     // background: rgba(230, 230, 230, 0.342);
+//     // box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+//     // padding: 3px;
+
+//     .content-cards-image1 {
+//       background-image: url("../images/coronaProject.jpg");
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: top;
+//       background-size: 100%;
+//       width: 100%;
+//       height: 50%;
+//     }
+
+//     .content-cards-image2 {
+//       background-image: url("../images/hotel.jpg");
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: top;
+//       background-size: 100%;
+//       width: 100%;
+//       height: 50%;
+//     }
+
+//     .content-cards-text {
+//       color: rgb(97, 97, 97);
+//       text-align: left;
+//       padding: 15px;
+//       font-size: 15px;
+//     }
+
+//     .content-cards-text2 {
+//       color: black;
+//       font-size: 21px;
+//       padding: 5px;
+//       text-align: left;
+//     }
+
+//     .content-cards-text3 {
+//       color: rgb(90, 90, 90);
+//       font-size: 16px;
+//       padding: 5px;
+//       text-align: left;
+//     }
+//   }
+// }

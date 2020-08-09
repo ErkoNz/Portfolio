@@ -1,0 +1,118 @@
+.mainPage {
+  height: 100vh;
+  background-color: #ebebeb9b;
+  position: relative;
+  background: radial-gradient(
+    circle at 72.5% 45.5%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(231, 231, 231, 1) 100%
+  );
+
+  .squareMainScreen {
+    background: rgba(255, 255, 255, 0.267);
+    position: absolute;
+    height: 80vh;
+    margin-top: -5vh;
+    left: 10vh;
+    width: 18%;
+    transform: skew(-55deg);
+    z-index: 5;
+    top: 0;
+  }
+
+  .main-content {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 98%;
+    position: relative;
+    z-index: 4;
+
+    .my-stuff {
+      color: white;
+      font-weight: normal;
+      max-width: 700px;
+      letter-spacing: 0.7px;
+
+      div:nth-child(1) {
+        font-size: 30px;
+        color: rgba(39, 39, 39, 0.658);
+        line-height: 1;
+      }
+
+      div:nth-child(2) {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: black;
+      }
+
+      div:nth-child(3) {
+        font-size: 15px;
+        color: rgb(233, 233, 233);
+        line-height: 2;
+        font-weight: normal;
+        color: rgb(219, 219, 219);
+        color: rgb(109, 109, 109);
+      }
+    }
+
+    .myImage-main img {
+      width: 400px;
+      margin-right: 40px;
+    }
+
+    .button-wrapper {
+      margin-top: -10px;
+
+      button {
+        border-radius: 20px;
+        font-size: 19px;
+        width: 180px;
+        height: 48px;
+        border: none;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      button.my-projects-button {
+        background: #2daa61;
+        color: white;
+      }
+
+      button.my-projects-button:hover {
+        background: #219150;
+        border-radius: 15px;
+      }
+
+      button.about-button {
+        color: #696969;
+        color: var(--green_v1);
+        border: 3px solid var(--green_v1);
+        background: transparent;
+        margin-left: 60px;
+      }
+
+      .button-wrapper button.about-button:hover {
+        border: 3px solid #219150;
+        color: #219150;
+        background-color: rgba(255, 255, 255, 0.171);
+        border-radius: 15px;
+      }
+    }
+
+    .line-underButtons {
+      margin-top: 30px;
+      background: rgba(184, 184, 184, 0.678);
+      width: 210px;
+      height: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}
