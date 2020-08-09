@@ -1,6 +1,6 @@
 import React from 'react'
 import '../cssFiles/about.scss'
-import myphoto from '../images/about.jpg'
+import myphoto from '../images/about.png'
 // import { IoLogoHtml5 } from 'react-icons/Io'
 import { FaHtml5 } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';

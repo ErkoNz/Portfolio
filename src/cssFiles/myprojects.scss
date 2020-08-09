@@ -191,7 +191,10 @@
         margin-left: 3%;
 
         .builtWith {
-          color: rgb(149, 149, 149);
+          color: rgb(119, 119, 119);
+          // color: red;
+          color: black;
+
           font-size: 1rem;
           // border: 1px solid red;
           position: relative;
@@ -311,7 +314,8 @@
         margin-right: 5%;
 
         .builtWith {
-          color: rgb(149, 149, 149);
+          color: rgb(119, 119, 119);
+          color: black;
           font-size: 1rem;
           // border: 1px solid red;
           position: relative;

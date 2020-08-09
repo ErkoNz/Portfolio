@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/NunitoSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
