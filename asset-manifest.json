@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2789bca3.chunk.css",
-    "main.js": "/portfolio/static/js/main.0235f0ca.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0235f0ca.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.4899bedc.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4899bedc.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b97a0a97.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b97a0a97.js.map",
     "static/js/2.b9785044.chunk.js": "/portfolio/static/js/2.b9785044.chunk.js",
     "static/js/2.b9785044.chunk.js.map": "/portfolio/static/js/2.b9785044.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1f6241b29a272d7a37524ebfca0cbc50.js": "/portfolio/precache-manifest.1f6241b29a272d7a37524ebfca0cbc50.js",
+    "precache-manifest.42426926a9eaca568fa18a564e9b2ead.js": "/portfolio/precache-manifest.42426926a9eaca568fa18a564e9b2ead.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.2789bca3.chunk.css.map": "/portfolio/static/css/main.2789bca3.chunk.css.map",
     "static/js/2.b9785044.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b9785044.chunk.js.LICENSE.txt",
     "static/media/Csharp.svg": "/portfolio/static/media/Csharp.904f4abd.svg",
-    "static/media/about.jpg": "/portfolio/static/media/about.ee5fca57.jpg",
+    "static/media/about.png": "/portfolio/static/media/about.a1e0492b.png",
     "static/media/corelDraw.svg": "/portfolio/static/media/corelDraw.ac39e1d1.svg",
     "static/media/cpp.svg": "/portfolio/static/media/cpp.f305ebed.svg",
     "static/media/githubsvg.svg": "/portfolio/static/media/githubsvg.65ca64b2.svg",
     "static/media/movingPicCovid.jpg": "/portfolio/static/media/movingPicCovid.b74cb054.jpg",
-    "static/media/movingPicEminent.jpg": "/portfolio/static/media/movingPicEminent.077ece0c.jpg",
-    "static/media/myPic.png": "/portfolio/static/media/myPic.01125857.png",
+    "static/media/movingPicEminent.jpg": "/portfolio/static/media/movingPicEminent.96ba3f79.jpg",
+    "static/media/myPic.png": "/portfolio/static/media/myPic.dbda1848.png",
     "static/media/restApi.svg": "/portfolio/static/media/restApi.a25cf04f.svg",
     "static/media/sonyVegas.svg": "/portfolio/static/media/sonyVegas.e6e6c457.svg",
     "static/media/sqlIcon.svg": "/portfolio/static/media/sqlIcon.1e0ca6ab.svg"
@@ -28,6 +28,6 @@
     "static/js/runtime-main.b97a0a97.js",
     "static/js/2.b9785044.chunk.js",
     "static/css/main.2789bca3.chunk.css",
-    "static/js/main.0235f0ca.chunk.js"
+    "static/js/main.4899bedc.chunk.js"
   ]
 }
