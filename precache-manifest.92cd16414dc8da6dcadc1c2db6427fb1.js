@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8deb75d3f67e40abe16f1c59ce81330",
+    "revision": "6dfc4ed1280a0a53851d2ea38fc22066",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "ce3cf1fb5ef528d35b16",
-    "url": "/portfolio/static/css/main.2789bca3.chunk.css"
+    "revision": "3364f743bea1e6088980",
+    "url": "/portfolio/static/css/main.bf1c72ba.chunk.css"
   },
   {
     "revision": "f4977019ebd0c63f75c9",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.b9785044.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce3cf1fb5ef528d35b16",
+    "revision": "3364f743bea1e6088980",
     "url": "/portfolio/static/js/main.4899bedc.chunk.js"
   },
   {
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "904f4abdac337ba780fda1444977df22",
     "url": "/portfolio/static/media/Csharp.904f4abd.svg"
+  },
+  {
+    "revision": "bd318b58018198a57723f311627492ac",
+    "url": "/portfolio/static/media/NunitoSans-SemiBold.bd318b58.ttf"
   },
   {
     "revision": "a1e0492b526be24c2e209d6a4f7dc4b2",
