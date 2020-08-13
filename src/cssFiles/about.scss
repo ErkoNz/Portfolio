@@ -1,10 +1,32 @@
+@mixin lower-then-desktop {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
 .main-about {
-  height: 100vh;
+  // height: 100vh;
   background-color: rgba(98, 98, 98, 0.082);
   text-align: center;
   padding-top: 5vh;
   position: relative;
   overflow: hidden;
+  @include lower-then-desktop {
+  }
+  // border: 2px solid red;
+
+  // .about-background {
+  //   position: absolute;
+  //   // border: 3px solid blue;
+  //   width: 99%;
+  //   height: 99%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   color: rgba(133, 133, 133, 0.055);
+  //   z-index: -1;
+
+  // }
 
   h3 {
     margin-top: 5vh;
@@ -12,6 +34,9 @@
     font-weight: normal;
     display: inline-block;
     position: relative;
+    @include lower-then-desktop {
+      transform: scale(0.7);
+    }
   }
 
   h3::after {
@@ -55,18 +80,41 @@
     margin-left: 15%;
     align-items: center;
     height: 60%;
+    border: 2px solid red;
+    @include lower-then-desktop {
+      width: 100%;
+      margin: 0;
+      height: auto;
+      flex-direction: column;
+    }
     // border: 1px solid red;
 
     div:nth-child(1) {
       line-height: 2;
+      border: 1px solid black;
       letter-spacing: 0.5px;
-      max-width: 40%;
+      width: 45%;
       font-size: 18px;
       text-align: justify;
+      @include lower-then-desktop {
+        width: auto;
+        z-index: 1;
+        font-size: 15px;
+        padding: 20px;
+        letter-spacing: 0;
+        // line-height: 1.6;
+      }
     }
 
     div:nth-child(2) {
       max-width: 50%;
+      border: 2px solid red;
+
+      img {
+        @include lower-then-desktop {
+          width: 70%;
+        }
+      }
     }
   }
 
@@ -78,10 +126,19 @@
     align-items: center;
     width: 70%;
     margin-left: 15%;
+    @include lower-then-desktop {
+      width: 90%;
+      margin-left: 5%;
+    }
     span {
       padding: 30px;
       padding-top: 0px;
       //   border: 1px solid red;
+      @include lower-then-desktop {
+        padding: 5px;
+        z-index: 1;
+        transform: scale(0.8);
+      }
     }
   }
 }

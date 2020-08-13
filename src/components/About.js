@@ -14,6 +14,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { DiMongodb } from 'react-icons/di';
 import { FaPhp } from 'react-icons/fa';
 import { FaJava } from 'react-icons/fa';
+import { DiCode } from 'react-icons/di';
 import sqlIcon from '../images/sqlIcon.svg';
 import restApi from '../images/restApi.svg';
 import corelDraw from '../images/corelDraw.svg';
@@ -24,6 +25,9 @@ import Cpp from '../images/cpp.svg';
 function About() {
     return (
         <div className="main-about">
+            {/* <div className="about-background">
+                <DiCode size={1800} />
+            </div> */}
             <div className="square4"></div>
             <div className="square5"></div>
             <h3>About</h3><br></br>

@@ -1,14 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: "Nunito";
   src: url("./fonts/NunitoSans-SemiBold.ttf");
   font-weight: 600;
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", Arial, sans-serif;
+  /* font-family: "Poppins", Arial, sans-serif; */
   font-family: "Nunito", sans-serif;
 }
 

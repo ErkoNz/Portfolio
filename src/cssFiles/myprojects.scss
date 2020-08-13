@@ -1,3 +1,9 @@
+@mixin lower-then-desktop {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
 .myProjects-main {
   // margin-top: -100vh;
   min-height: 100vh;
@@ -6,14 +12,15 @@
   padding-top: 5vh;
   position: relative;
   overflow: hidden;
+  // border: 2px solid red;
 
   h3 {
     margin-top: 1em;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: normal;
     display: inline-block;
     position: relative;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
   }
 
   h3::before {
@@ -25,15 +32,19 @@
     height: 4px;
   }
 
-  .square2 {
-    background: rgba(98, 98, 98, 0.082);
-    left: -300px;
-    top: -320px;
-    width: 400px;
-    height: 1000px;
-    position: absolute;
-    transform: rotate(47deg);
-  }
+  // .square2 {
+  //   background: rgba(98, 98, 98, 0.082);
+  //   background: #eaeaea;
+  //   background: red;
+  //   width: 40%;
+  //   height: 40%;
+  //   position: absolute;
+  //   transform: skew(-47deg);
+
+  //   @include lower-then-desktop {
+  //     // height: 40%;
+  //   }
+  // }
 
   .square3 {
     background: rgba(98, 98, 98, 0.082);
@@ -50,12 +61,21 @@
     // border: 2px solid black;
     width: 70%;
     margin-left: 15%;
+    @include lower-then-desktop {
+      margin-left: 5%;
+      width: 90%;
+      margin-right: 5%;
+    }
 
     .more-soon {
       // color: red;
       font-size: 1.2rem;
       margin: 50px;
       letter-spacing: 1.5px;
+      @include lower-then-desktop {
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
 
       span:nth-child(1) {
         animation: firstdot 4s linear infinite;
@@ -127,19 +147,33 @@
     }
 
     .covidProject {
-      // border: 4px solid blue;
       display: flex;
       justify-content: center;
       align-self: center;
-      margin: 10px;
+      // margin: 10px;
+      // border: 1px solid red;
+      @include lower-then-desktop {
+        justify-content: unset;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+      }
 
       div:nth-child(1) {
         width: 35%;
-        height: 350px;
+        height: 300px;
         overflow: hidden;
         background: rgb(71, 71, 71);
         margin-bottom: 80px;
+        // border: 2px solid green;
         position: relative;
+        @include lower-then-desktop {
+          // height: 350px;
+          // min-width: 35%;
+          width: 70%;
+          margin-left: 15%;
+          height: 200px;
+          margin-bottom: 35px;
+        }
 
         img:hover {
           opacity: 0.5;
@@ -152,6 +186,9 @@
           position: relative;
           top: 0px;
           transition: 0.4s;
+          @include lower-then-desktop {
+            animation: none 5s linear 2s infinite;
+          }
 
           @keyframes covid {
             0% {
@@ -177,33 +214,49 @@
 
       div:nth-child(2) {
         width: 40%;
-        font-size: 2.2rem;
+        // font-size: 1.7rem;
         font-weight: bold;
-        color: rgb(77, 77, 77);
         text-align: left;
         padding-left: 35px;
         letter-spacing: 1px;
-        height: 350px;
-        line-height: 1.2;
+        height: 300px;
+        line-height: 1.5;
         position: relative;
         padding-top: 10px;
-        // border: 2px solid green;
+        // border: 2px solid blue;
         margin-left: 3%;
+        @include lower-then-desktop {
+          width: 110%;
+          padding: 0;
+          margin-left: -4%;
+          transform: scale(0.9);
+          height: auto;
+        }
+
+        .nameofProject {
+          font-size: 1.7rem;
+          color: rgb(77, 77, 77);
+          margin: 0;
+          padding: 0;
+        }
 
         .builtWith {
-          color: rgb(119, 119, 119);
-          // color: red;
-          color: black;
-
+          color: rgb(88, 88, 88);
           font-size: 1rem;
           // border: 1px solid red;
-          position: relative;
-          bottom: 0;
+          position: absolute;
+          bottom: 15px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 50%;
-          margin-top: 50px;
+          width: 60%;
+          // margin-top: 50px;
+          @include lower-then-desktop {
+            position: relative;
+            width: 100%;
+            justify-content: space-evenly;
+            bottom: 0;
+          }
         }
 
         .date {
@@ -214,11 +267,17 @@
         .textProject {
           color: rgb(0, 0, 0);
           font-size: 1.1rem;
+          line-height: 2;
+          // border: 1px solid red;
         }
 
         .buttonWrapper {
           margin-left: 0px;
-          margin-top: 40px;
+          // border: 1px solid red;
+          margin-top: 30px;
+          @include lower-then-desktop {
+            margin: 10px 0 10px 0;
+          }
 
           button {
             margin-right: 25px;
@@ -256,14 +315,27 @@
       align-self: center;
       margin: 10px;
       // border: 2px solid red;
+      @include lower-then-desktop {
+        justify-content: unset;
+        flex-direction: column;
+      }
 
       div:nth-child(2) {
         // border: 2px solid red;
         width: 35%;
-        height: 350px;
+        height: 300px;
         overflow: hidden;
         background: rgb(71, 71, 71);
         margin-bottom: 80px;
+        @include lower-then-desktop {
+          // height: 350px;
+          // min-width: 35%;
+          width: 70%;
+          margin-left: 15%;
+          height: 200px;
+          margin-bottom: 25px;
+        }
+
         img:hover {
           opacity: 0.5;
           cursor: pointer;
@@ -275,6 +347,9 @@
           top: 0px;
           transition: 0.4s;
           animation-delay: 1s;
+          @include lower-then-desktop {
+            animation: none 5s linear 2s infinite;
+          }
 
           @keyframes eminent {
             0% {
@@ -300,22 +375,34 @@
 
       div:nth-child(1) {
         width: 40%;
-        font-size: 2.2rem;
         font-weight: bold;
         color: rgb(77, 77, 77);
         text-align: left;
         padding-left: 35px;
         letter-spacing: 1px;
-        height: 350px;
-        line-height: 1.2;
+        height: 300px;
+        line-height: 1.5;
         position: relative;
         padding-top: 10px;
-        // border: 3px solid blue;
-        margin-right: 5%;
+        margin-right: 3%;
+        // border: 2px solid blue;
+        @include lower-then-desktop {
+          width: 110%;
+          padding: 0;
+          margin-left: -4%;
+          transform: scale(0.9);
+          height: auto;
+        }
+
+        .nameofProject {
+          font-size: 1.7rem;
+          color: rgb(77, 77, 77);
+          margin: 0;
+          padding: 0;
+        }
 
         .builtWith {
-          color: rgb(119, 119, 119);
-          color: black;
+          color: rgb(88, 88, 88);
           font-size: 1rem;
           // border: 1px solid red;
           position: relative;
@@ -323,8 +410,14 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 50%;
+          width: 60%;
           margin-top: 50px;
+          @include lower-then-desktop {
+            position: relative;
+            width: 100%;
+            justify-content: space-evenly;
+            bottom: 0;
+          }
         }
 
         .date {
@@ -335,11 +428,15 @@
         .textProject {
           color: rgb(0, 0, 0);
           font-size: 1.1rem;
+          line-height: 2;
         }
 
         .buttonWrapper {
           margin-left: 0px;
           margin-top: 40px;
+          @include lower-then-desktop {
+            margin: 10px 0 10px 0;
+          }
 
           button {
             margin-right: 25px;

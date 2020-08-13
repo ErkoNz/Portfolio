@@ -3,6 +3,7 @@ import React from 'react'
 import '../cssFiles/mainscreen.scss'
 import githubIcon from '../images/githubsvg.svg'
 import myPic from '../images/myPic.png'
+import waves from '../images/waves.svg'
 
 function MainScreen() {
 
@@ -11,14 +12,13 @@ function MainScreen() {
     return (
 
         <div className="mainPage">
-            <div className="squareMainScreen"></div>
+            {/* <div className="squareMainScreen"></div> */}
+            <div className="waves" ><img src={waves} alt="" /></div>
 
-            {/* <div className="darker-background"> */}
             <div className="main-content">
                 <div className="my-stuff">
                     <div>Hello, I am Erik</div>
                     <div>Full - Stack Web Develope<span style={{ color: '#2daa61' }}>r</span></div>
-                    {/* <div className="sentence-under-name"> */}
                     <div>
                         I'm a UI/UX Designer, Web Developer from Slovakia and I am trying to keep up with new & modern web technologies.
                     </div>
@@ -29,16 +29,15 @@ function MainScreen() {
                     </div>
                     <div className="line-underButtons"></div>
                     <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} />
+                    {/* <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} />
                     <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} />
-                    <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} />
-                    <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} />
+                    <img src={githubIcon} alt="github" style={{ width: '50px', padding: '10px' }} /> */}
 
                 </div>
                 <div className="myImage-main">
                     <img src={myPic} alt="myPic" />
                 </div>
             </div>
-            {/* </div> */}
 
         </div >
     )

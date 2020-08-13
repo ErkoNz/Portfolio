@@ -7,8 +7,8 @@ import movingPicEminent from '../images/movingPicEminent.jpg'
 function MyProjects() {
     return (
         <div className="myProjects-main">
-            <div className="square2"></div>
-            <div className="square3"></div>
+            {/* <div className="square2"></div> */}
+            {/* <div className="square3"></div> */}
             <h3 >My projects</h3>
 
             <section className="projectsSection">
@@ -18,7 +18,8 @@ function MyProjects() {
                     <div>
                         <a href="https://erkonz.github.io/production4/#/" target="_blank" rel="noopener noreferrer"> <img src={movingPicCovid} alt="covid19" /> </a>
                     </div>
-                    <div>Covid - 19 tracker
+                    <div>
+                        <span className="nameofProject">Covid - 19 tracker</span>
                         <br /><span className="date">June 2020</span>
                         <br /><span className="textProject">A small & simple Frontend JavaScript app, built with ReactJS, ChartJS, Fetching...</span>
 
@@ -40,7 +41,9 @@ function MyProjects() {
                 </div>
 
                 <div className="hotelProject">
-                    <div>Hotel Web
+                    <div>
+                        <span className="nameofProject">Hotel Web</span>
+
                         <br /><span className="date">March 2019</span>
                         <br /><span className="textProject">
                             Bachelor degree project, hotel website with working reservation system, food ordering system and CMS.
