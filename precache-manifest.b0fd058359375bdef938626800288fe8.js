@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1b29c345ca362069db428a54a4d64a4",
+    "revision": "968d93fcfec5414585c3c7b2e16811ae",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "91c73a4414879b333a79",
-    "url": "/portfolio/static/css/main.9dea9711.chunk.css"
+    "revision": "a4c0406d3d95e1c0e526",
+    "url": "/portfolio/static/css/main.901edcfe.chunk.css"
   },
   {
     "revision": "bac89b195424777d6d1a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.0440345c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91c73a4414879b333a79",
-    "url": "/portfolio/static/js/main.d5fae45e.chunk.js"
+    "revision": "a4c0406d3d95e1c0e526",
+    "url": "/portfolio/static/js/main.7a697abf.chunk.js"
   },
   {
     "revision": "e63ac8d85df9dec8b092",
@@ -32,10 +32,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Erik_Zabransky_CV.f454c3b0.pdf"
   },
   {
-    "revision": "a1e0492b526be24c2e209d6a4f7dc4b2",
-    "url": "/portfolio/static/media/about.a1e0492b.png"
-  },
-  {
     "revision": "ac39e1d1b927dc294274fec310a7fb21",
     "url": "/portfolio/static/media/corelDraw.ac39e1d1.svg"
   },
@@ -46,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "65ca64b246c9a1ad71f6f9051912f9b0",
     "url": "/portfolio/static/media/githubsvg.65ca64b2.svg"
+  },
+  {
+    "revision": "dfdad4833610874085f960f5e62df43a",
+    "url": "/portfolio/static/media/laptopmobile1.dfdad483.png"
   },
   {
     "revision": "b74cb054e6feae66e6918e0927f28611",
