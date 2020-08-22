@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd63536d17e5b8c2f8b288621fda3324",
+    "revision": "3ca0a16d0fa5a6dfc700018986cf045f",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "2217f1666495867ddffe",
-    "url": "/portfolio/static/css/main.590dc71c.chunk.css"
+    "revision": "db736dc82c597f30df6f",
+    "url": "/portfolio/static/css/main.99d16d7d.chunk.css"
   },
   {
     "revision": "976ad3a40f8ed450b250",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.5a92cddb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2217f1666495867ddffe",
-    "url": "/portfolio/static/js/main.82a3550a.chunk.js"
+    "revision": "db736dc82c597f30df6f",
+    "url": "/portfolio/static/js/main.fbde969d.chunk.js"
   },
   {
     "revision": "e63ac8d85df9dec8b092",
@@ -30,6 +30,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f454c3b01f2b0dec65f6719197918bab",
     "url": "/portfolio/static/media/Erik_Zabransky_CV.f454c3b0.pdf"
+  },
+  {
+    "revision": "6abf597a1f3f44fd10bdcb7b86b494f0",
+    "url": "/portfolio/static/media/Nunito-Black.6abf597a.ttf"
+  },
+  {
+    "revision": "1cd294a771f26752bbb8d8d5210f6412",
+    "url": "/portfolio/static/media/Nunito-Bold.1cd294a7.ttf"
+  },
+  {
+    "revision": "19caf1c06e022593ea4657734d691c86",
+    "url": "/portfolio/static/media/Nunito-ExtraBold.19caf1c0.ttf"
+  },
+  {
+    "revision": "4f3d2e011a08fae118e258bcaf0dfa13",
+    "url": "/portfolio/static/media/Nunito-ExtraLight.4f3d2e01.ttf"
+  },
+  {
+    "revision": "6a4fadd273f85b2ae8c6ffadbcf7beec",
+    "url": "/portfolio/static/media/Nunito-Light.6a4fadd2.ttf"
+  },
+  {
+    "revision": "d2e691bc4a2b696929172cb3d22ce8ba",
+    "url": "/portfolio/static/media/Nunito-Regular.d2e691bc.ttf"
+  },
+  {
+    "revision": "76ae20d4d4b7d46e613d2581512fcf73",
+    "url": "/portfolio/static/media/Nunito-SemiBold.76ae20d4.ttf"
   },
   {
     "revision": "0c42cf8b3a7cc55f03881677c7b6aadd",
