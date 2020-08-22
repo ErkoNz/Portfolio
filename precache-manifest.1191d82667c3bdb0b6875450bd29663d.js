@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c9de0da87cb328eb0d0f145837b4045",
+    "revision": "32ea93bf1f914d7e853783a60145240c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "83eea97bda782212de14",
-    "url": "/portfolio/static/css/main.25274e68.chunk.css"
+    "revision": "986251a009dcfdb1e862",
+    "url": "/portfolio/static/css/main.590dc71c.chunk.css"
   },
   {
     "revision": "976ad3a40f8ed450b250",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.5a92cddb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83eea97bda782212de14",
-    "url": "/portfolio/static/js/main.874ab278.chunk.js"
+    "revision": "986251a009dcfdb1e862",
+    "url": "/portfolio/static/js/main.c438f1b2.chunk.js"
   },
   {
     "revision": "e63ac8d85df9dec8b092",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Erik_Zabransky_CV.f454c3b0.pdf"
   },
   {
-    "revision": "bbc0964bc40b6ca9b86e5d5a04609dce",
-    "url": "/portfolio/static/media/businesscard.bbc0964b.jpg"
+    "revision": "0c42cf8b3a7cc55f03881677c7b6aadd",
+    "url": "/portfolio/static/media/businesscard.0c42cf8b.webp"
   },
   {
     "revision": "ac39e1d1b927dc294274fec310a7fb21",
     "url": "/portfolio/static/media/corelDraw.ac39e1d1.svg"
   },
   {
-    "revision": "22fd341e531b4fa9440d905aea8bbd77",
-    "url": "/portfolio/static/media/covidlaptop.22fd341e.png"
+    "revision": "f0d6cbf5653e9727b25cef9399d1cf4a",
+    "url": "/portfolio/static/media/covidlaptop.f0d6cbf5.webp"
   },
   {
     "revision": "f305ebedd7b975f13edaabe85f23e0e5",
@@ -52,16 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/githubsvg.65ca64b2.svg"
   },
   {
-    "revision": "ef3f26e8ab8d5075ffb985282000cf67",
-    "url": "/portfolio/static/media/laptopHotel.ef3f26e8.png"
+    "revision": "91aa4cae31722efd44fef676a559ccec",
+    "url": "/portfolio/static/media/laptopHotel.91aa4cae.webp"
   },
   {
-    "revision": "3ab164b68215f95d6409e1311f77d4d2",
-    "url": "/portfolio/static/media/myPic.3ab164b6.png"
+    "revision": "9507990f7e786a07b7560d4f7b88ba19",
+    "url": "/portfolio/static/media/myPic.9507990f.webp"
   },
   {
-    "revision": "4df033dd2fe5f0a2eae4f08c4ac0e187",
-    "url": "/portfolio/static/media/posterHotel.4df033dd.jpg"
+    "revision": "d2b891ca7cd0598a9be6da553c710383",
+    "url": "/portfolio/static/media/posterHotel.d2b891ca.webp"
   },
   {
     "revision": "a25cf04f90c2302c9bcb7e8b5fab4c50",

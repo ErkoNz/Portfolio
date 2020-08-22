@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.25274e68.chunk.css",
-    "main.js": "/portfolio/static/js/main.874ab278.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.874ab278.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.590dc71c.chunk.css",
+    "main.js": "/portfolio/static/js/main.c438f1b2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c438f1b2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b97a0a97.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b97a0a97.js.map",
     "static/js/2.5a92cddb.chunk.js": "/portfolio/static/js/2.5a92cddb.chunk.js",
     "static/js/2.5a92cddb.chunk.js.map": "/portfolio/static/js/2.5a92cddb.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.748d2b600c4a22749222963fcbab0a6f.js": "/portfolio/precache-manifest.748d2b600c4a22749222963fcbab0a6f.js",
+    "precache-manifest.1191d82667c3bdb0b6875450bd29663d.js": "/portfolio/precache-manifest.1191d82667c3bdb0b6875450bd29663d.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.25274e68.chunk.css.map": "/portfolio/static/css/main.25274e68.chunk.css.map",
+    "static/css/main.590dc71c.chunk.css.map": "/portfolio/static/css/main.590dc71c.chunk.css.map",
     "static/js/2.5a92cddb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5a92cddb.chunk.js.LICENSE.txt",
     "static/media/Csharp.svg": "/portfolio/static/media/Csharp.904f4abd.svg",
     "static/media/Erik_Zabransky_CV.pdf": "/portfolio/static/media/Erik_Zabransky_CV.f454c3b0.pdf",
-    "static/media/businesscard.jpg": "/portfolio/static/media/businesscard.bbc0964b.jpg",
+    "static/media/businesscard.webp": "/portfolio/static/media/businesscard.0c42cf8b.webp",
     "static/media/corelDraw.svg": "/portfolio/static/media/corelDraw.ac39e1d1.svg",
-    "static/media/covidlaptop.png": "/portfolio/static/media/covidlaptop.22fd341e.png",
+    "static/media/covidlaptop.webp": "/portfolio/static/media/covidlaptop.f0d6cbf5.webp",
     "static/media/cpp.svg": "/portfolio/static/media/cpp.f305ebed.svg",
     "static/media/githubsvg.svg": "/portfolio/static/media/githubsvg.65ca64b2.svg",
-    "static/media/laptopHotel.png": "/portfolio/static/media/laptopHotel.ef3f26e8.png",
-    "static/media/myPic.png": "/portfolio/static/media/myPic.3ab164b6.png",
-    "static/media/posterHotel.jpg": "/portfolio/static/media/posterHotel.4df033dd.jpg",
+    "static/media/laptopHotel.webp": "/portfolio/static/media/laptopHotel.91aa4cae.webp",
+    "static/media/myPic.webp": "/portfolio/static/media/myPic.9507990f.webp",
+    "static/media/posterHotel.webp": "/portfolio/static/media/posterHotel.d2b891ca.webp",
     "static/media/restApi.svg": "/portfolio/static/media/restApi.a25cf04f.svg",
     "static/media/sonyVegas.svg": "/portfolio/static/media/sonyVegas.e6e6c457.svg",
     "static/media/sqlIcon.svg": "/portfolio/static/media/sqlIcon.1e0ca6ab.svg",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.b97a0a97.js",
     "static/js/2.5a92cddb.chunk.js",
-    "static/css/main.25274e68.chunk.css",
-    "static/js/main.874ab278.chunk.js"
+    "static/css/main.590dc71c.chunk.css",
+    "static/js/main.c438f1b2.chunk.js"
   ]
 }
