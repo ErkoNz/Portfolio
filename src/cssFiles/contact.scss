@@ -1,0 +1,32 @@
+@mixin lower-then-desktop {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+section.contact {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  background-color: rgba(98, 98, 98, 0.082);
+  h3 {
+    margin-top: 5vh;
+    font-size: 50px;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+    @include lower-then-desktop {
+      transform: scale(0.7);
+    }
+  }
+  h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--green_v1);
+    width: 60px;
+    height: 4px;
+  }
+}

@@ -1,33 +1,33 @@
 import React from 'react'
-// import '../cssFiles/myproject.css'
 import '../cssFiles/myprojects.scss'
-import movingPicCovid from '../images/movingPicCovid.jpg'
-import movingPicEminent from '../images/movingPicEminent.jpg'
+// import movingPicCovid from '../images/movingPicCovid.jpg'
+// import movingPicEminent from '../images/movingPicEminent.jpg'
+// import laptopmobile1 from '../images/laptopmobile1.png'
+import laptopHotel from '../images/laptopHotel.png'
+import covidlaptop from '../images/covidlaptop.png'
+import businesscard from '../images/businesscard.jpg'
+import posterHotel from '../images/posterHotel.jpg'
+import { AiOutlineDoubleRight } from "react-icons/ai";
 
 function MyProjects() {
     return (
-        <div className="myProjects-main">
-            {/* <div className="square2"></div> */}
-            {/* <div className="square3"></div> */}
+        <section className="myProjects-section" id="MyProjects">
             <h3 >My projects</h3>
 
-            <section className="projectsSection">
+            <div className="project-wrapper">
 
 
-                <div className="covidProject">
-                    <div>
-                        <a href="https://erkonz.github.io/production4/#/" target="_blank" rel="noopener noreferrer"> <img src={movingPicCovid} alt="covid19" /> </a>
-                    </div>
-                    <div>
-                        <span className="nameofProject">Covid - 19 tracker</span>
-                        <br /><span className="date">June 2020</span>
-                        <br /><span className="textProject">A small & simple Frontend JavaScript app, built with ReactJS, ChartJS, Fetching...</span>
-
-                        <div className="buttonWrapper">
-                            <button><a href="https://erkonz.github.io/production4/#/" target="_blank" rel="noopener noreferrer">Preview</a></button>
-                            <button><a href="https://github.com/ErkoNz/production4" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+                <div className="projects-content">
+                    <div className="leftDivText">
+                        <h4>Covid - 19 Tracker</h4>
+                        <span className="date">June 2020</span>
+                        <div className="textProject">
+                            {/* A small & simple Frontend JavaScript app, built with ReactJS, ChartJS, Fetching... */}
+                            A small & simple Frontend ReactJS app where I used react hooks.
+                            I did this project in my free time, while doing exams in university.
+                            My goal was to gather fastest and most reliable data source about cases of covid-19 first in Slovakia and later in whole world.
+                            I tried to make UI as readable as possible.
                         </div>
-
                         <div className="builtWith">
                             <span>HTML</span>
                             <span>|</span>
@@ -38,22 +38,25 @@ function MyProjects() {
                             <span>ChartJS</span>
                         </div>
                     </div>
+                    <a href="https://erkonz.github.io/production4/#/" target="_blank" rel="noopener noreferrer">
+                        <div className="rightDivImg">
+                            <img src={covidlaptop} alt="" />
+
+                            <button className="preview_button">Preview 	<div className="icon_prev_button"><AiOutlineDoubleRight /></div> </button>
+                        </div>
+                    </a>
                 </div>
 
-                <div className="hotelProject">
-                    <div>
-                        <span className="nameofProject">Hotel Web</span>
 
-                        <br /><span className="date">March 2019</span>
-                        <br /><span className="textProject">
-                            Bachelor degree project, hotel website with working reservation system, food ordering system and CMS.
-                            </span>
 
-                        <div className="buttonWrapper">
-                            <button><a href="http://ishotelbc2.epizy.com/zabransky/uvod.php" target="_blank" rel="noopener noreferrer">Preview</a></button>
-                            <button>GitHub</button>
+
+                <div className="projects-content">
+                    <div className="leftDivText">
+                        <h4>Hotel web</h4>
+                        <span className="date">March 2019</span>
+                        <div className="textProject">
+                            Bachelor degree project at university. Fully functional hotel website with working room reservation system, event reservation system, food ordering system and CMS.
                         </div>
-
                         <div className="builtWith">
                             <span>HTML</span>
                             <span>|</span>
@@ -66,89 +69,65 @@ function MyProjects() {
                             <span>MySQL</span>
                         </div>
                     </div>
-                    <div><a href="http://ishotelbc2.epizy.com/zabransky/uvod.php" rel="noopener noreferrer" target="_blank" >
-                        <img src={movingPicEminent} alt="hotel Bc" /></a></div>
+                    <a href="http://ishotelbc2.epizy.com/zabransky/uvod.php" target="_blank" rel="noopener noreferrer">
+                        <div className="rightDivImg">
+                            <img src={laptopHotel} alt="" />
+                            <button className="preview_button">Preview 	<div className="icon_prev_button"><AiOutlineDoubleRight /></div> </button>
+                        </div>
+                    </a>
                 </div>
 
 
-                <div className="more-soon">More coming soon
-                    <span>.</span>
-                    <span>.</span>
-                    <span>.</span>
-                </div>
 
-                {/* <div className="hotelProject">
-                    <div>a</div>
-                    <div><img src={movingPicEminent} /></div>
-                </div>
-
-                <div className="hotelProject">
-                    <div>a</div>
-                    <div><img src={movingPicEminent} /></div>
-                </div>
-
-                <div className="hotelProject">
-                    <div>a</div>
-                    <div><img src={movingPicEminent} /></div>
-                </div> */}
-
-                {/* <div className="projectsWrapper">
-                    <div><img src={movingPicCovid} /></div>
-                    <div>b</div>
-                </div> */}
-
-
-            </section>
-
-
-
-            {/* <div className="content-projects">
-
-                <div className="card">
-                    <div className="wrapper_moving_pic">
-                        <img src={movingPicCovid} className="classCovid" />
+                <div className="projects-content">
+                    <div className="leftDivText">
+                        <h4>Business card</h4>
+                        <span className="date">December 2018</span>
+                        <div className="textProject">
+                            Business card for a local hairdrasser.
+                        </div>
+                        <div className="builtWith">
+                            <span>Photoshop</span>
+                            <span>|</span>
+                            <span>CorelDraw</span>
+                        </div>
                     </div>
-                    <div className="content-cards-text">
-                        June, 2020
-                    </div>
-                    <div className="content-cards-text2">
-                        Covid-19 Tracker | 4fun project
-                    </div>
-                    <div className="content-cards-text3">
-                        A small & simple Frontend JavaScript app, built with ReactJS, ChartJS, Fetching...
+                    <div className="instead_of_a" >
+                        <div className="rightDivImg dont_blur">
+                            <img src={businesscard} alt="" />
+                        </div>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="wrapper_moving_pic">
-                        <img src={movingPicEminent} className="classEminent" />
+
+
+
+
+
+                <div className="projects-content">
+                    <div className="leftDivText">
+                        <h4>Grill - Party poster</h4>
+                        <span className="date">July 2020</span>
+                        <div className="textProject">
+                            Graph design for poster. Ordered by local Hotel & Restaurant.
+                        </div>
+                        <div className="builtWith">
+                            <span>Photoshop</span>
+                            <span>|</span>
+                            <span>CorelDraw</span>
+                        </div>
                     </div>
-                    <div className="content-cards-text">
-                        March, 2019
-                    </div>
-                    <div className="content-cards-text2">
-                        Hotel Web with Reservations, Food Ordering, CMS...
-                    </div>
-                    <div className="content-cards-text3">
-                        Bachelor degree project, using HTML, CSS, PHP, JS, AJAX, JQUERY and MySQL database.
+                    <div className="instead_of_a" >
+                        <div className="rightDivImg dont_blur">
+                            <img src={posterHotel} alt="" style={{ width: '50%' }} />
+                        </div>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="content-cards-image">
-                    </div>
-                    <div className="content-cards-text">
-                        June, 2020
-                    </div>
-                    <div className="content-cards-text2">
-                        More coming soon...
-                    </div>
-                    <div className="content-cards-text3">
 
-                    </div>
-                </div>
-            </div> */}
-        </div>
+
+            </div>
+        </section>
     )
 }
 

@@ -1,0 +1,615 @@
+@mixin lower-then-desktop {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+.myProjects-main {
+  // margin-top: -100vh;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 5vh;
+  position: relative;
+  overflow: hidden;
+  // border: 2px solid red;
+  @include lower-then-desktop {
+    padding-top: 2.5vh;
+  }
+
+  h3 {
+    margin-top: 3vh;
+    font-size: 50px;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+
+    @include lower-then-desktop {
+      transform: scale(0.7);
+      margin-top: 5vh;
+    }
+  }
+
+  h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: var(--green_v1);
+    width: 60px;
+    height: 4px;
+  }
+
+  // .square2 {
+  //   background: rgba(98, 98, 98, 0.082);
+  //   background: #eaeaea;
+  //   background: red;
+  //   width: 40%;
+  //   height: 40%;
+  //   position: absolute;
+  //   transform: skew(-47deg);
+
+  //   @include lower-then-desktop {
+  //     // height: 40%;
+  //   }
+  // }
+
+  .square3 {
+    background: rgba(98, 98, 98, 0.082);
+    right: -300px;
+    bottom: -420px;
+    width: 400px;
+    height: 1000px;
+    position: absolute;
+    transform: rotate(47deg);
+  }
+
+  .projectsSection {
+    margin-top: 30px;
+    // border: 2px solid black;
+    width: 70%;
+    margin-left: 15%;
+    @include lower-then-desktop {
+      margin-left: 5%;
+      width: 90%;
+      margin-right: 5%;
+    }
+
+    .more-soon {
+      color: rgb(93, 93, 93);
+      font-size: 1rem;
+      margin: 50px;
+      letter-spacing: 1.5px;
+      @include lower-then-desktop {
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+
+      span:nth-child(1) {
+        animation: firstdot 4s linear infinite;
+      }
+
+      @keyframes firstdot {
+        0% {
+          opacity: 1;
+        }
+        82% {
+          opacity: 1;
+        }
+        83% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      span:nth-child(2) {
+        animation: seconddot 4s linear infinite;
+      }
+
+      @keyframes seconddot {
+        0% {
+          opacity: 0;
+        }
+        16% {
+          opacity: 0;
+        }
+        16.1% {
+          opacity: 1;
+        }
+        63% {
+          opacity: 1;
+        }
+        64% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      span:nth-child(3) {
+        animation: thirddot 4s linear infinite;
+        @keyframes thirddot {
+          0% {
+            opacity: 0;
+          }
+          33% {
+            opacity: 0;
+          }
+          34% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 1;
+          }
+          51% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .covidProject {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      // margin: 10px;
+      // border: 1px solid red;
+      @include lower-then-desktop {
+        justify-content: unset;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+      }
+
+      div:nth-child(1) {
+        width: 35%;
+        height: 300px;
+        // overflow: hidden;
+        // background: rgb(71, 71, 71);
+        margin-bottom: 80px;
+        // border: 2px solid green;
+        position: relative;
+        @include lower-then-desktop {
+          // height: 350px;
+          // min-width: 35%;
+          width: 70%;
+          margin-left: 15%;
+          height: 200px;
+          margin-bottom: 35px;
+        }
+
+        img:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+          // animation: covid 5s linear 2s infinite;
+          position: relative;
+          // transform: rotateY(180deg);
+          top: 0px;
+          transition: 0.4s;
+          @include lower-then-desktop {
+            animation: none 5s linear 2s infinite;
+          }
+
+          @keyframes covid {
+            0% {
+              top: 0px;
+            }
+            30% {
+              top: -250px;
+            }
+            50% {
+              top: -250px;
+            }
+
+            80% {
+              top: 0px;
+            }
+
+            100% {
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      div:nth-child(2) {
+        width: 40%;
+        // font-size: 1.7rem;
+        // font-weight: bold;
+        text-align: left;
+        padding-left: 35px;
+        letter-spacing: 1px;
+        height: 300px;
+        line-height: 1.5;
+        position: relative;
+        padding-top: 10px;
+        margin-left: 3%;
+        @include lower-then-desktop {
+          width: 110%;
+          padding: 0;
+          margin-left: -4%;
+          transform: scale(0.9);
+          height: auto;
+        }
+
+        .nameofProject {
+          font-size: 1.7rem;
+          color: rgb(77, 77, 77);
+          margin: 0;
+          padding: 0;
+        }
+
+        .builtWith {
+          color: rgb(88, 88, 88);
+          font-size: 1rem;
+          // border: 1px solid red;
+          position: absolute;
+          bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70%;
+          // margin-top: 50px;
+          @include lower-then-desktop {
+            position: relative;
+            width: 100%;
+            justify-content: space-evenly;
+            bottom: 0;
+          }
+        }
+
+        .date {
+          color: rgb(109, 109, 109);
+          font-size: 0.9rem;
+        }
+
+        .textProject {
+          color: rgb(0, 0, 0);
+          // font-size: 1rem;
+          line-height: 2;
+          // font-weight: 800;
+          // border: 1px solid red;
+        }
+
+        .buttonWrapper {
+          margin-left: 0px;
+          // border: 1px solid red;
+          margin-top: 30px;
+          @include lower-then-desktop {
+            margin: 10px 0 10px 0;
+          }
+
+          button {
+            margin-right: 25px;
+            padding: 6px 30px;
+            outline: none;
+            background: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+          button:hover {
+            border-radius: 20px;
+          }
+          button:nth-child(1) {
+            background: var(--green_v1);
+            color: white;
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2) {
+            border: 3px solid var(--green_v1);
+          }
+        }
+      }
+    }
+
+    .hotelProject {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 10px;
+      // border: 2px solid red;
+      @include lower-then-desktop {
+        justify-content: unset;
+        flex-direction: column;
+      }
+
+      div:nth-child(2) {
+        // border: 2px solid red;
+        width: 35%;
+        height: 300px;
+        overflow: hidden;
+        background: rgb(71, 71, 71);
+        margin-bottom: 80px;
+        @include lower-then-desktop {
+          // height: 350px;
+          // min-width: 35%;
+          width: 70%;
+          margin-left: 15%;
+          height: 200px;
+          margin-bottom: 25px;
+        }
+
+        img:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        img {
+          width: 100%;
+          animation: eminent 5s linear 2s infinite;
+          position: relative;
+          top: 0px;
+          transition: 0.4s;
+          animation-delay: 1s;
+          @include lower-then-desktop {
+            animation: none 5s linear 2s infinite;
+          }
+
+          @keyframes eminent {
+            0% {
+              top: 0px;
+            }
+            30% {
+              top: -200px;
+            }
+            50% {
+              top: -200px;
+            }
+
+            80% {
+              top: 0px;
+            }
+
+            100% {
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      div:nth-child(1) {
+        width: 40%;
+        font-weight: bold;
+        color: rgb(77, 77, 77);
+        text-align: left;
+        padding-left: 35px;
+        letter-spacing: 1px;
+        height: 300px;
+        line-height: 1.5;
+        position: relative;
+        padding-top: 10px;
+        margin-right: 3%;
+        // border: 2px solid blue;
+        @include lower-then-desktop {
+          width: 110%;
+          padding: 0;
+          margin-left: -4%;
+          transform: scale(0.9);
+          height: auto;
+        }
+
+        .nameofProject {
+          font-size: 1.7rem;
+          color: rgb(77, 77, 77);
+          margin: 0;
+          padding: 0;
+        }
+
+        .builtWith {
+          color: rgb(88, 88, 88);
+          font-size: 1rem;
+          // border: 1px solid red;
+          position: relative;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70%;
+          margin-top: 50px;
+          @include lower-then-desktop {
+            position: relative;
+            width: 100%;
+            justify-content: space-evenly;
+            bottom: 0;
+          }
+        }
+
+        .date {
+          color: rgb(109, 109, 109);
+          font-size: 0.9rem;
+        }
+
+        .textProject {
+          color: rgb(0, 0, 0);
+          // font-size: 1.1rem;
+          line-height: 2;
+        }
+
+        .buttonWrapper {
+          margin-left: 0px;
+          margin-top: 40px;
+          @include lower-then-desktop {
+            margin: 10px 0 10px 0;
+          }
+
+          button {
+            margin-right: 25px;
+            padding: 6px 30px;
+            outline: none;
+            background: none;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+          button:hover {
+            border-radius: 20px;
+          }
+          button:nth-child(1) {
+            background: var(--green_v1);
+            color: white;
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2) {
+            border: 3px solid var(--green_v1);
+          }
+          button:nth-child(2):hover {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .content-projects {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   color: red;
+//   height: 75%;
+//   margin-left: 12%;
+
+//   .wrapper_moving_pic {
+//     // border: 2px solid red;
+//     width: 100%;
+//     height: 250px;
+//     overflow: hidden;
+//     background: rgb(71, 71, 71);
+
+//     img.classCovid {
+//       width: 100%;
+//       animation: covid 5s linear 2s infinite;
+//       position: relative;
+//       top: 0px;
+//       transition: 0.4s;
+//     }
+
+//     img.classEminent {
+//       width: 100%;
+//       animation: eminent 6s linear 2s infinite;
+//       position: relative;
+//       animation-delay: 2s;
+//       transition: 0.4s;
+//     }
+
+//     img:hover {
+//       opacity: 0.5;
+//     }
+
+//     @keyframes covid {
+//       0% {
+//         top: 0px;
+//       }
+//       30% {
+//         top: -200px;
+//       }
+//       50% {
+//         top: -200px;
+//       }
+
+//       80% {
+//         top: 0px;
+//       }
+
+//       100% {
+//         top: 0px;
+//       }
+//     }
+
+//     @keyframes eminent {
+//       0% {
+//         top: 0px;
+//       }
+//       30% {
+//         top: -250px;
+//       }
+//       50% {
+//         top: -250px;
+//       }
+
+//       80% {
+//         top: 0px;
+//       }
+
+//       100% {
+//         top: 0px;
+//       }
+//     }
+//   }
+
+//   .card {
+//     width: 350px;
+//     height: 450px;
+//     margin-left: 100px;
+//     letter-spacing: 1px;
+//     // border: 1px solid red;
+//     // border-radius: 5px;
+//     overflow: hidden;
+//     // background: rgba(230, 230, 230, 0.342);
+//     // box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+//     // padding: 3px;
+
+//     .content-cards-image1 {
+//       background-image: url("../images/coronaProject.jpg");
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: top;
+//       background-size: 100%;
+//       width: 100%;
+//       height: 50%;
+//     }
+
+//     .content-cards-image2 {
+//       background-image: url("../images/hotel.jpg");
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: top;
+//       background-size: 100%;
+//       width: 100%;
+//       height: 50%;
+//     }
+
+//     .content-cards-text {
+//       color: rgb(97, 97, 97);
+//       text-align: left;
+//       padding: 15px;
+//       font-size: 15px;
+//     }
+
+//     .content-cards-text2 {
+//       color: black;
+//       font-size: 21px;
+//       padding: 5px;
+//       text-align: left;
+//     }
+
+//     .content-cards-text3 {
+//       color: rgb(90, 90, 90);
+//       font-size: 16px;
+//       padding: 5px;
+//       text-align: left;
+//     }
+//   }
+// }

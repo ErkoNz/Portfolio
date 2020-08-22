@@ -4,25 +4,41 @@
   font-weight: 600;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200,300;400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Poppins", Arial, sans-serif; */
   font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 :root {
-  --green_v1: #2daa61;
+  --green_v1: #229e56;
   --green_v1_hover: #219150;
+  --grey: #464646;
+  --greye: #5d5d5d;
+  --greyer: #909090;
+  --greyerer: #c2c2c2;
 }
 
 body {
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 button:focus {
   outline: 0;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+  overflow-x: hidden;
 }

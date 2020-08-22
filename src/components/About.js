@@ -1,46 +1,51 @@
 import React from 'react'
 import '../cssFiles/about.scss'
-import myphoto from '../images/about.png'
-// import { IoLogoHtml5 } from 'react-icons/Io'
-import { FaHtml5 } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import { FaNodeJs } from 'react-icons/fa';
-import { IoLogoCss3 } from 'react-icons/io';
-import { DiPhotoshop } from 'react-icons/di';
-import { GrGraphQl } from 'react-icons/gr';
-import { GrMysql } from 'react-icons/gr';
-import { DiJavascript1 } from 'react-icons/di';
+// import myphoto from '../images/about.png'
+import { FaHtml5, FaNodeJs, FaReact, FaPhp, FaJava } from 'react-icons/fa';
+import { IoLogoCss3, IoLogoSass, IoMdDownload } from 'react-icons/io';
+import { DiPhotoshop, DiJavascript1, DiMongodb } from 'react-icons/di';
+import { GrGraphQl, GrMysql } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
-import { DiMongodb } from 'react-icons/di';
-import { FaPhp } from 'react-icons/fa';
-import { FaJava } from 'react-icons/fa';
-import { DiCode } from 'react-icons/di';
+import { RiCodeSSlashLine } from 'react-icons/ri';
 import sqlIcon from '../images/sqlIcon.svg';
 import restApi from '../images/restApi.svg';
 import corelDraw from '../images/corelDraw.svg';
 import sonyVegas from '../images/sonyVegas.svg';
 import Csharp from '../images/Csharp.svg';
 import Cpp from '../images/cpp.svg';
+import CV from './Erik_Zabransky_CV.pdf'
 
 function About() {
     return (
-        <div className="main-about">
-            {/* <div className="about-background">
-                <DiCode size={1800} />
-            </div> */}
+        <div className="main-about" id="About">
+            <div className="about-background">
+                <RiCodeSSlashLine className="dicode" />
+            </div>
             <div className="square4"></div>
             <div className="square5"></div>
-            <h3>About</h3><br></br>
-            <div className="about-container">
-                <div>
-                    I'm a 24 years old student, studying applied informatics and finishing my master degree in 2021. I have been learning simple web technologies since 2011 (4 years HTML & CSS in high school).
-                    On university, I started using programming languages, such as C, C++, C#, Java & PHP and more. Since Late 2019, I started learning ReactJS (self-taught), now trying to get better at Backend stuff (REST API, GRAPHQL, NodeJS, MongoDB). In near future, I'd like to learn Vue, React-Native / Flutter. I am always focusing on highest performance, simple design and great UX.
-                </div>
-                <div><img src={myphoto} alt="MyPhoto" /></div>
+            <h3>About</h3>
+            <div className="about-container" >
+                <p >
+                    I am currently student of applied informatics and finishing my master degree in 2021. Computer science have attracted me since childhood. Because of that, I decided to study graphic design in high school, where we mostly did posters, business cards, brouchers, video editing and some web designs with HTML & CSS. 
+                    
+                    On university, I started using programming languages, such as C, C++, C#, Java, PHP and more.
+                    Since Late 2019, I started learning <span>ReactJS</span> (self-taught), now  getting better at Backend (REST API, GRAPHQL, NodeJS, MongoDB).
+
+                    After years of studying programming languages, I discovered that my passion is with web technologies (both design and development). I got ton of energy for this kind of a work and looking forward to learn new technologies, as it is a never ending process.
+                    In near future, I'd like to learn Vue, React-Native / Flutter and many more. I am always focusing on highest performance, simple design and great UX.
+                </p>
+                {/* <div><img src={myphoto} loading="lazy" alt="MyPhoto" /></div> */}
+            </div>
+            <div className="wrapperResume">
+                <button onClick={() => window.open(CV)}>
+                    <IoMdDownload size={20} style={{ color: 'green', marginRight: '10px' }} />
+                    Resume.pdf
+                </button>
             </div>
             <div className="languages">
                 <span><FaHtml5 size={40} style={{ color: 'grey' }} /> <br />HTML</span>
                 <span><IoLogoCss3 size={40} style={{ color: 'grey' }} /> <br />CSS</span>
+                <span><IoLogoSass size={40} style={{ color: 'grey' }} /> <br />Sass</span>
                 <span><FaReact size={40} style={{ color: 'grey' }} /> <br />ReactJS</span>
                 <span><FaNodeJs size={40} style={{ color: 'grey' }} /> <br />NodeJS</span>
                 <span><img src={restApi} alt="restApi" style={{ width: '110px', height: '40px' }} /> <br />REST API</span>

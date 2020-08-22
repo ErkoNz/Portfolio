@@ -1,11 +1,14 @@
 import React from 'react'
-import '../cssFiles/footer.css'
+import '../cssFiles/footer.scss'
 
 function Footer() {
+    const date = new Date().getFullYear()
     return (
-        <div className="mainFooter">
-            This is footer
-        </div>
+        <footer>
+            <div> Copyright ©  {date} Erik Zábranský<br />
+            Website by me...
+            </div>
+        </footer>
     )
 }
 

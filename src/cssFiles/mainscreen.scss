@@ -3,28 +3,46 @@
     @content;
   }
 }
+// @mixin lower-then-desktop {
+//   @media (max-width: 900px) {
+//     @content;
+//   }
+// }
 
 $bor: 0px;
 
 .mainPage {
-  border: $bor solid red;
-  height: 100vh;
+  border: 0.001px solid rgba(255, 255, 255, 0);
   // margin-top: 10vh;
   max-width: 100vw;
+  height: 100vh;
   background-color: #ebebeb9b;
   position: relative;
+  // background: radial-gradient(
+  //   circle at 72.5% 45.5%,
+  //   rgba(248, 248, 248, 1) 0%,
+  //   rgba(231, 231, 231, 1) 100%
+  // );
   background: radial-gradient(
     circle at 72.5% 45.5%,
-    rgba(248, 248, 248, 1) 0%,
-    rgba(231, 231, 231, 1) 100%
+    rgba(251, 251, 251, 1) 0%,
+    rgb(240, 240, 240) 100%
   );
+  overflow: hidden;
+  // overflow: hidden;
+  // border: 50px solid red;
+
+  @include lower-then-desktop {
+    padding-bottom: 30px;
+  }
 
   .waves {
     position: absolute;
     z-index: 2;
-    bottom: -7.5px;
+    bottom: -7.7px;
     left: 20.4%;
     left: 384px;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -90,8 +108,9 @@ $bor: 0px;
       div:nth-child(2) {
         font-size: 50px;
         font-weight: bold;
-        line-height: 1.5;
+        line-height: 1.3;
         color: black;
+        margin-bottom: 10px;
         @include lower-then-desktop {
           font-size: 28px;
           line-height: 1.3;
@@ -100,11 +119,12 @@ $bor: 0px;
       }
 
       div:nth-child(3) {
-        font-size: 15px;
+        font-size: 16px;
         color: rgb(233, 233, 233);
         line-height: 2;
         font-weight: normal;
         color: rgb(219, 219, 219);
+        // border: 1px solid blue;
         color: rgb(109, 109, 109);
         @include lower-then-desktop {
           font-size: 14px;
@@ -123,30 +143,35 @@ $bor: 0px;
       justify-content: center;
       width: 100%;
       // border: 2px solid red;
+      margin-top: -10px;
       @include lower-then-desktop {
       }
 
       img {
-        max-width: 50vh;
+        width: 52%;
+        min-width: 300px;
+        max-width: 560px;
         // border: 2px solid red;
         box-shadow: 20px 20px 0px 0px rgba(207, 207, 207, 0.4);
         border-radius: 50%;
         // margin-right: 40px;
 
         @include lower-then-desktop {
-          width: 200px;
+          // min-width: 190px;
+          max-width: 330px;
+          min-width: 190px;
+          width: 65vw;
+          margin-top: -40px;
+          box-shadow: 10px 10px 0px 0px rgba(207, 207, 207, 0.4);
         }
       }
     }
 
     .button-wrapper {
-      border: $bor solid red;
       display: flex;
-
+      margin-top: 40px;
       @include lower-then-desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 25px;
       }
       button {
         border-radius: 20px;
@@ -156,14 +181,18 @@ $bor: 0px;
         border: none;
         transition: 0.2s;
         margin-top: -10px;
+
         @include lower-then-desktop {
-          margin-top: -30px;
-          transform: scale(0.8);
-          width: 50%;
+          // transform: scale(0.7);
+          // justify-content: space-evenly;
+          width: 35%;
+          max-width: 180px;
+          height: 38px;
           white-space: nowrap;
-          border: $bor solid salmon;
-          border-radius: 5px;
-          // font-size: 17px;
+          border-radius: 16px;
+          // font-size: 16px;
+          font-size: 0.9rem;
+          // border: 5px solid red;
         }
       }
 
@@ -172,9 +201,7 @@ $bor: 0px;
       }
 
       button.my-projects-button {
-        background: #2daa61;
-        border: $bor solid red;
-
+        background: var(--green_v1);
         color: white;
       }
 
@@ -190,11 +217,11 @@ $bor: 0px;
         background: transparent;
         margin-left: 60px;
         @include lower-then-desktop {
-          margin-left: 0px;
+          margin-left: 30px;
         }
       }
 
-      .button-wrapper button.about-button:hover {
+      button.about-button:hover {
         border: 3px solid #219150;
         color: #219150;
         background-color: rgba(255, 255, 255, 0.171);
