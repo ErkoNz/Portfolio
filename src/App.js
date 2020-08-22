@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './Font.css';
 import Nav from './components/Nav';
 import MainScreen from './components/MainScreen';
 import MyProjects from './components/MyProjects';

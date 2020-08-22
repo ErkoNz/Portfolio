@@ -3,10 +3,14 @@ import '../cssFiles/myprojects.scss'
 // import movingPicCovid from '../images/movingPicCovid.jpg'
 // import movingPicEminent from '../images/movingPicEminent.jpg'
 // import laptopmobile1 from '../images/laptopmobile1.png'
-import laptopHotel from '../images/laptopHotel.png'
-import covidlaptop from '../images/covidlaptop.png'
-import businesscard from '../images/businesscard.jpg'
-import posterHotel from '../images/posterHotel.jpg'
+// import laptopHotel from '../images/laptopHotel.png'
+import laptopHotel from '../images/laptopHotel.webp'
+// import covidlaptop from '../images/covidlaptop.png'
+import covidlaptop from '../images/covidlaptop.webp'
+// import businesscard from '../images/businesscard.jpg'
+import businesscard from '../images/businesscard.webp'
+// import posterHotel from '../images/posterHotel.jpg'
+import posterHotel from '../images/posterHotel.webp'
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
 function MyProjects() {

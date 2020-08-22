@@ -17,8 +17,7 @@ function HireMe() {
                 <div className="contact-cards">
 
                     <div className="card-mail-phone">
-                        <a href="mailto:erik.zabransky@gmail.com"><GoMail size={45} className="iconHireMe" /> </a>
-                        <span>erik.zabransky@gmail.com</span>
+                        <a href="mailto:erik.zabransky@gmail.com"><GoMail size={45} className="iconHireMe" /><span>erik.zabransky@gmail.com</span></a>
                     </div>
 
                     <div className="card-mail-phone">

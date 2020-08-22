@@ -2,7 +2,8 @@ import React from 'react'
 // import '../cssFiles/mainPage.css'
 import '../cssFiles/mainscreen.scss'
 import githubIcon from '../images/githubsvg.svg'
-import myPic from '../images/myPic.png'
+// import myPic from '../images/myPic.png'
+import myPic from '../images/myPic.webp'
 import waves from '../images/waves.svg'
 
 // function MainScreen({ fullpageApi }) {
