@@ -4,7 +4,8 @@ import '../cssFiles/mainscreen.scss'
 import githubIcon from '../images/githubsvg.svg'
 // import myPic from '../images/myPic.png'
 import myPic from '../images/myPic.webp'
-import waves from '../images/waves.svg'
+// import waves from '../images/waves.svg'
+import wave from '../images/wave.svg'
 
 // function MainScreen({ fullpageApi }) {
 function MainScreen() {
@@ -31,7 +32,7 @@ function MainScreen() {
 
 
         <div className="mainPage" id="Home" >
-            <div className="waves" ><img src={waves} alt="" /></div>
+            <div className="waves" ><img src={wave} alt="" /></div>
             <div className="main-content" >
                 <div className="my-stuff">
                     <div>Hello, I am Erik</div>

@@ -30,24 +30,28 @@ $bor: 0px;
   );
   overflow: hidden;
   // overflow: hidden;
-  // border: 50px solid red;
-
+  // border: 2px solid red;
+  border-bottom: 1px solid white;
   @include lower-then-desktop {
     padding-bottom: 30px;
   }
 
   .waves {
-    position: absolute;
-    z-index: 2;
-    bottom: -7.7px;
-    left: 20.4%;
-    left: 384px;
-    overflow: hidden;
+    // bottom: -7.7px;
+    // left: 20.4%;
+    // left: 384px;
+    bottom: 0;
+    width: 100%;
+    // border: 1px solid black;
 
     img {
       width: 100%;
+      position: absolute;
+      bottom: -3px;
+      // border: 1px solid green;
       @include lower-then-desktop {
-        width: 0;
+        // width: 0;
+        transform: scaleY(1.4) translateY(-13px);
       }
     }
   }
@@ -158,9 +162,9 @@ $bor: 0px;
 
         @include lower-then-desktop {
           // min-width: 190px;
-          max-width: 330px;
-          min-width: 190px;
-          width: 65vw;
+          max-width: 270px;
+          min-width: 170px;
+          width: 40vw;
           margin-top: -40px;
           box-shadow: 10px 10px 0px 0px rgba(207, 207, 207, 0.4);
         }

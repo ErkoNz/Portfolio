@@ -12,6 +12,7 @@ import businesscard from '../images/businesscard.webp'
 // import posterHotel from '../images/posterHotel.jpg'
 import posterHotel from '../images/posterHotel.webp'
 import { AiOutlineDoubleRight } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 function MyProjects() {
     return (
@@ -24,6 +25,8 @@ function MyProjects() {
                 <div className="projects-content">
                     <div className="leftDivText">
                         <h4>Covid - 19 Tracker</h4>
+                        <div className="gitLink" onClick={() => window.open('https://github.com/ErkoNz/production4', '_blank')}>
+                            <AiFillGithub /></div>
                         <span className="date">June 2020</span>
                         <div className="textProject">
                             {/* A small & simple Frontend JavaScript app, built with ReactJS, ChartJS, Fetching... */}
@@ -88,7 +91,7 @@ function MyProjects() {
                         <h4>Business card</h4>
                         <span className="date">December 2018</span>
                         <div className="textProject">
-                            Business card for a local hairdrasser.
+                            Business card for a local hairdresser.
                         </div>
                         <div className="builtWith">
                             <span>Photoshop</span>

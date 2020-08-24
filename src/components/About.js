@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../cssFiles/about.scss'
 // import myphoto from '../images/about.png'
 import { FaHtml5, FaNodeJs, FaReact, FaPhp, FaJava } from 'react-icons/fa';
@@ -7,6 +7,10 @@ import { DiPhotoshop, DiJavascript1, DiMongodb } from 'react-icons/di';
 import { GrGraphQl, GrMysql } from 'react-icons/gr';
 import { AiFillGithub } from 'react-icons/ai';
 import { RiCodeSSlashLine } from 'react-icons/ri';
+import { BsThreeDotsVertical } from 'react-icons/bs';
+// import { MdFormatListBulleted } from 'react-icons/md';
+// import { GoListUnordered } from 'react-icons/go';
+import { VscListFlat } from 'react-icons/vsc';
 import sqlIcon from '../images/sqlIcon.svg';
 import restApi from '../images/restApi.svg';
 import corelDraw from '../images/corelDraw.svg';
@@ -16,6 +20,42 @@ import Cpp from '../images/cpp.svg';
 import CV from './Erik_Zabransky_CV.pdf'
 
 function About() {
+    const [LessMoreText, setLessMoreText] = useState({
+        more: {
+            display: 'block',
+        },
+        less: {
+            display: 'none',
+        }
+    })
+    function ShowMore(){
+        var element1 = document.getElementById("morebutton");
+        var element2 = document.getElementById("lessbutton");
+        element1.classList.toggle("activeBtn");
+        element2.classList.toggle("activeBtn");
+        setLessMoreText({
+            more: {
+                display: 'block',
+            },
+            less: {
+                display: 'none',
+            }
+        })
+    }
+    function ShowLess(){
+        var element1 = document.getElementById("morebutton");
+        var element2 = document.getElementById("lessbutton");
+        element1.classList.toggle("activeBtn");
+        element2.classList.toggle("activeBtn");
+        setLessMoreText({
+            more: {
+                display: 'none',
+            },
+            less: {
+                display: 'block',
+            }
+        })
+    }
     return (
         <div className="main-about" id="About">
             <div className="about-background">
@@ -25,15 +65,30 @@ function About() {
             <div className="square5"></div>
             <h3>About</h3>
             <div className="about-container" >
-                <p >
+                <div className="less_text">
+                    <button aria-label="more" id="morebutton" className="activeBtn" onClick={ShowMore}><VscListFlat size={20} /></button>
+                    <button aria-label="less" id="lessbutton" onClick={ShowLess}><BsThreeDotsVertical size={20} /></button>
+                </div>
+                <p style={LessMoreText.more} className="listMore">
                     I am currently student of applied informatics and finishing my master degree in 2021. Computer science have attracted me since childhood. Because of that, I decided to study graphic design in high school, where we mostly did posters, business cards, brouchers, video editing and some web designs with HTML & CSS. 
                     
                     On university, I started using programming languages, such as C, C++, C#, Java, PHP and more.
-                    Since Late 2019, I started learning <span>ReactJS</span> (self-taught), now  getting better at Backend (REST API, GRAPHQL, NodeJS, MongoDB).
+                    Since Late 2019, I started learning <span>ReactJS</span> (self-taught), now  getting better at Backend (REST API, GRAPHQL, NodeJS, MongoDB), but I still prefer Frontend.
 
                     After years of studying programming languages, I discovered that my passion is with web technologies (both design and development). I got ton of energy for this kind of a work and looking forward to learn new technologies, as it is a never ending process.
                     In near future, I'd like to learn Vue, React-Native / Flutter and many more. I am always focusing on highest performance, simple design and great UX.
                 </p>
+                    <ul style={LessMoreText.less} className="listLess">
+                        <li>Currently - student of applied informatics, finishing my master degree in 2021</li>
+                        <li>Studied graphic design in high school</li>
+                        <li>On university, I started using programming languages, such as C, C++, C#, Java, PHP...</li>
+                        <li>Late 2019, I started learning <span>ReactJS</span> (self-taught)</li>
+                        <li>Now getting better at Backend (REST API, GRAPHQL, NodeJS, MongoDB), but still prefer Frontend</li>
+                        <li>My passion is with web technologies (both design and development</li>
+                        <li>Looking forward to learn new technologies, as it is never ending process</li>
+                        <li>In near future, I'd like to learn Vue, React-Native/Flutter...</li>
+                        <li>I'm always focusing on highest performance, simple design and great UX</li>
+                    </ul>
                 {/* <div><img src={myphoto} loading="lazy" alt="MyPhoto" /></div> */}
             </div>
             <div className="wrapperResume">

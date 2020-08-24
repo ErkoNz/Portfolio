@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../cssFiles/navbar.scss'
-import { GiHamburgerMenu } from 'react-icons/gi';
+import MyLogo from '../images/MyLogo.svg'
 // import MainScreen from './MainScreen';
 // import About from './About';
 // import MyProjects from './MyProjects';
@@ -13,6 +13,7 @@ function Nav() {
             right: "-50%"
         }
     })
+
     window.onscroll = function () {
         var header = document.querySelector('.nav-wrapper')
         if (header)
@@ -76,11 +77,25 @@ function Nav() {
                 }
             })
         }
+        var line1 = document.querySelector('.line1')
+        var line2 = document.querySelector('.line2')
+        var line3 = document.querySelector('.line3')
+        if (line1 && line2 && line3) {
+            line1.classList.toggle('toggled1')
+            line2.classList.toggle('toggled2')
+            line3.classList.toggle('toggled3')
+        }
     }
 
     function closeBurger() {
         if (burgerClick.isOpen) {
             document.removeEventListener("click", closeBurger, false);     // Fails
+            var element1 = document.getElementById("IdLine1");
+            var element2 = document.getElementById("IdLine2");
+            var element3 = document.getElementById("IdLine3");
+            element1.classList.remove("toggled1");
+            element2.classList.remove("toggled2");
+            element3.classList.remove("toggled3");
             setBurgerClick({
                 isOpen: false,
                 styling: {
@@ -105,30 +120,6 @@ function Nav() {
     }
 
 
-    // window.onscroll = function () { scrollTest() };
-
-    // function scrollTest() {
-    //     let mainNavLinks = document.querySelectorAll("ul li a");
-
-    //     let fromTop = window.scrollY;
-    //     // console.log(mainNavLinks)
-
-    //     mainNavLinks.forEach(link => {
-    //         let section = document.querySelector(link.hash);
-    //         // console.log(section)
-    //         if (section &&
-
-    //             section.offsetTop <= fromTop + 100 &&
-    //             section.offsetTop + section.offsetHeight > fromTop + 100
-
-    //         ) {
-    //             link.classList.add("current");
-    //         } else {
-    //             link.classList.remove("current");
-    //         }
-    //     });
-    // }
-
     return (
         <>
             <nav className="nav-wrapper" id="navbar" >
@@ -139,8 +130,10 @@ function Nav() {
                 {/* {window.screen.availHeight}
                 {"H__W" + window.screen.availWidth} */}
                 <div id="myName" className="myName-as-logo" onClick={() => scrollTo("Home")}>
-                    <div></div>
-                    <div>
+                    <div className="logoImg">
+                        <img src={MyLogo} alt="EZ Logo" />
+                    </div>
+                    <div className="nameText">
                         ERIK<br />ZÁBRANSKÝ
                         </div>
                 </div>
@@ -173,7 +166,11 @@ function Nav() {
                 </ul>
 
                 <div className="burgerDiv" onClick={BurgerFunction}>
-                    <GiHamburgerMenu className="burger" style={{ color: 'black' }} />
+                    {/* <GiHamburgerMenu className="burger" style={{ color: 'black' }} /> */}
+
+                    <div className="line1" id="IdLine1"></div>
+                    <div className="line2" id="IdLine2"></div>
+                    <div className="line3" id="IdLine3"></div>
                 </div>
 
                 {/* </nav> */}
