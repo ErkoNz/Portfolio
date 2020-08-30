@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e9046f47.chunk.css",
-    "main.js": "/portfolio/static/js/main.ac2a7280.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ac2a7280.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.ec8c272c.chunk.css",
+    "main.js": "/portfolio/static/js/main.7c5e3273.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7c5e3273.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.b97a0a97.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.b97a0a97.js.map",
-    "static/js/2.2694f890.chunk.js": "/portfolio/static/js/2.2694f890.chunk.js",
-    "static/js/2.2694f890.chunk.js.map": "/portfolio/static/js/2.2694f890.chunk.js.map",
+    "static/css/2.4707e12a.chunk.css": "/portfolio/static/css/2.4707e12a.chunk.css",
+    "static/js/2.cfc13b3e.chunk.js": "/portfolio/static/js/2.cfc13b3e.chunk.js",
+    "static/js/2.cfc13b3e.chunk.js.map": "/portfolio/static/js/2.cfc13b3e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.964d7b013ca0c6eebf5506f0561d50f2.js": "/portfolio/precache-manifest.964d7b013ca0c6eebf5506f0561d50f2.js",
+    "precache-manifest.4e0daf99b80350d812102386b076084b.js": "/portfolio/precache-manifest.4e0daf99b80350d812102386b076084b.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.e9046f47.chunk.css.map": "/portfolio/static/css/main.e9046f47.chunk.css.map",
-    "static/js/2.2694f890.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2694f890.chunk.js.LICENSE.txt",
+    "static/css/2.4707e12a.chunk.css.map": "/portfolio/static/css/2.4707e12a.chunk.css.map",
+    "static/css/main.ec8c272c.chunk.css.map": "/portfolio/static/css/main.ec8c272c.chunk.css.map",
+    "static/js/2.cfc13b3e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cfc13b3e.chunk.js.LICENSE.txt",
     "static/media/Csharp.svg": "/portfolio/static/media/Csharp.904f4abd.svg",
     "static/media/Erik_Zabransky_CV.pdf": "/portfolio/static/media/Erik_Zabransky_CV.f454c3b0.pdf",
     "static/media/navbar.scss": "/portfolio/static/media/Flag_of_the_United_Kingdom.68b4d830.svg",
@@ -32,8 +34,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b97a0a97.js",
-    "static/js/2.2694f890.chunk.js",
-    "static/css/main.e9046f47.chunk.css",
-    "static/js/main.ac2a7280.chunk.js"
+    "static/css/2.4707e12a.chunk.css",
+    "static/js/2.cfc13b3e.chunk.js",
+    "static/css/main.ec8c272c.chunk.css",
+    "static/js/main.7c5e3273.chunk.js"
   ]
 }
